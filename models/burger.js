@@ -11,11 +11,11 @@ var burger = {
         cb(res);
       });
     },
-    updateOne: function(condition, cb) {
-      orm.updateOne("burgers", condition, function(res) {
+    updateOne: function(objColVals, condition, cb) {
+      orm.updateOne("burgers", objColVals, condition, function(res) {
         cb(res);
       });
-    }
+    },
   };
   
 module.exports = burger;
