@@ -5,7 +5,6 @@ $(function() {
     
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: id
     }).then(
       function() {
         // Reload the page to get the updated list
