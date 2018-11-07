@@ -1,3 +1,20 @@
+<img class="burgimg" src="/assets/img/burger2.png" alt="burger" height="250" width="280">
+
+<div class="add">
+<h2 class="addtxt">Add a Burger</h2>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca"></label>
+    <input class="addin" type="text" id="ca" name="name">
+  </div>
+
+  <button class="btn addbtn" type="submit">ADD BURGER</button>
+</form>
+</div>
+
+<div class="undev">
 <h1>UNDEVOURED BURGERS</h1>
 <ul>
   {{#each burgers}}
@@ -5,11 +22,13 @@
   	<li>
   	  <p><span class="label">Burger number</span> {{this.id}}</p>
       <p><span class="label"></span> {{this.burger_name}}</p>
-      <button class="go-devour" data-id="{{this.id}}">DEVOUR</button>
+      <button class="go-devour btn" data-id="{{this.id}}">DEVOUR</button>
   	</li>
   {{/unless}}
   {{/each}}
 </ul>
+</div>
+<div class="dev">
 <h1>DEVOURED BURGERS</h1>
 <ul>
   {{#each burgers}}
@@ -21,17 +40,7 @@
   {{/if}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Add a Burger</h2>
-
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <button type="submit">Add Burger</button>
-</form>
 
 
